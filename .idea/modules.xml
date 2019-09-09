@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/gmall-manage-service/gmall-manage-service.iml" filepath="$PROJECT_DIR$/gmall-manage-service/gmall-manage-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmall-manage-web/gmall-manage-web.iml" filepath="$PROJECT_DIR$/gmall-manage-web/gmall-manage-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmall-oder-web/gmall-oder-web.iml" filepath="$PROJECT_DIR$/gmall-oder-web/gmall-oder-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall_bean/gmall_bean.iml" filepath="$PROJECT_DIR$/gmall_bean/gmall_bean.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall_interface/gmall_interface.iml" filepath="$PROJECT_DIR$/gmall_interface/gmall_interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall_parent/gmall_parent.iml" filepath="$PROJECT_DIR$/gmall_parent/gmall_parent.iml" />

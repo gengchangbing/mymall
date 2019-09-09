@@ -1,6 +1,8 @@
 package com.atguigu.gmall.gmall_user_manage.service.impl;
 
+import com.atguigu.gmall.bean.UserAddress;
 import com.atguigu.gmall.bean.UserInfo;
+import com.atguigu.gmall.gmall_user_manage.mapper.UserAddressMapper;
 import com.atguigu.gmall.gmall_user_manage.mapper.UserInfoMapper;
 import com.atguigu.gmall.service.UserManageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +12,11 @@ import tk.mybatis.mapper.entity.Example;
 import java.util.List;
 
 @Service
-
 public class UserManageServiceImpl implements UserManageService {
-    @Autowired
+   @Autowired
     UserInfoMapper userInfoMapper;
+    @Autowired
+    UserAddressMapper userAddressMapper;
 
     @Override
     public List<UserInfo> getUserImfolistAll() {
@@ -48,4 +51,15 @@ public class UserManageServiceImpl implements UserManageService {
         UserInfo userInfo = userInfoMapper.selectByPrimaryKey(id);
         return userInfo;
     }
+
+    @Override
+    public List<UserAddress> getUserAddressList(String userId) {
+        // 调用mapper
+        // select * from userAddress where userId=?
+        UserAddress userAddress = new UserAddress();
+        userAddress.setUserId(userId);
+        return userAddressMapper.select(userAddress);
+    }
+
+
 }
